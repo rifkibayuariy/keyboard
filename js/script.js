@@ -2,7 +2,7 @@ $(() => {
     $.map(keyboard.key, (key) => {
         const size = key.size.toString().split('.').join('')
         const keyCode = key.keyCode
-        const name = key.key.toUpperCase()
+        const name = key.key
         const location = key.location
 
         ver = ''
