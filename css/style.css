@@ -2,10 +2,10 @@
     display: inline-block;
     box-sizing: border-box;
     height: 52px;
-    font-size: 16px;
-    border: 1px solid black;
+    color: #1F5565;
+    border: 2px solid #1F5565;
     border-radius: 5px;
-    margin: 6px 4px;
+    margin: 4px 4px;
     position: relative;
 }
 
@@ -17,6 +17,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-transform: capitalize;
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .keycaps.mr-025u {
@@ -31,6 +34,31 @@
     margin-right: 64px;
 }
 
+.keycaps.s-mouseleft-u,
+.keycaps.s-mouseright-u,
+.keycaps.s-mousecenter-u {
+    height: 36px;
+}
+
+.keycaps.s-mouseleft-u,
+.keycaps.s-mouseright-u {
+    width: 112px;
+}
+
+.keycaps.s-mouseleft-u {
+    border-top-left-radius: 14px;
+    margin-left: 321px;
+}
+
+.keycaps.s-mouseright-u {
+    border-top-right-radius: 14px;
+    margin-right: 271px;
+}
+
+.keycaps.s-mousecenter-u {
+    width: 18px;
+}
+
 .keycaps.s-1u {
     width: 52px;
 }
@@ -42,7 +70,7 @@
 .keycaps.s-1u-ver {
     float: right;
     width: 52px;
-    height: 115px;
+    height: 111px;
 }
 
 .keycaps.s-15u {
@@ -69,12 +97,45 @@
     width: 442px;
 }
 
+.keycaps>p>svg {
+    width: 60%;
+    height: 60%;
+}
+
+.keycaps>p>svg * {
+    fill: #1F5565;
+}
+.keycaps.active>p>svg * {
+    fill: #ffffff;
+}
+
+.keycaps>p>span.context {
+    display: block;
+    width: 20px;
+    height: 22px;
+    border: 2px solid #1f5565;
+}
+
+.keycaps.active>p>span.context,
+.keycaps.active>p>span.context * {
+    border-color: #ffffff;
+}
+
+.keycaps>p>span.context>span {
+    display: block;
+    border-top: 2px solid #1f5565;
+    margin: 4px 3px 0;
+}
+
 .keycaps.active {
-    background-color: black;
-    color: white;
+    background-color: #1F5565;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 .keycaps.press {
-    background-color: red;
-    color: white;
+    background-color: #FAD9D2;
+    border-color: #FAD9D2;
+    color: #1F5565;
+    font-weight: bold;
 }
